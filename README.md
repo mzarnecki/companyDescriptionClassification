@@ -1,10 +1,22 @@
-# german text processing and classification using Python libraries Pandas, ScikitLearn, TextBlobDE
+# Text classification into industry categories
 
-Project runs in jupyter notebook on Anaconda3 environment with Python v3.7
+The goal of this projest is to present 2 different approaches for text classification. 
+Company descriptions are classified into 1835 industry codes from official german classification WZ 2008. 
+Complete description of the task and used approaches can be found in [this article](https://medium.com/p/3bff25ce6616).
 
-The goal of this projest is classifying company descriptions in german language to numbers representing industry areas.
-Project contains model training and evaluation as well as model export and import. 
-data/data.csv contains sample with 2 classes 
+## Approach with LLM (Large Language Model) + RAG (Retrieval Augmented Generation)
 
-In order to use it in real life classification problems just bring larger dataset.
-Project could be used even with more classes.
+Project shows classification of text with OpenAI GPT-4 model accessed via API.
+To improve classification results prompt is enriched by additional guidelines text accessed with RAG (Retrieval Augmented Generation) is used. 
+
+
+[classify-industry-with-LLM-and-RAG.ipynb](classify-industry-with-LLM-and-RAG.ipynb)
+
+
+## Approach with self trained model - RandomForestClassifier
+Project contains text normalization, tokenization, model training and evaluation as well as model export and import. 
+Presented approaches were used to classify company descriptions from [data/data.csv](data/data.csv) into 2 industry categories. 
+
+[classify-industry-with-self-train-model.ipynb](classify-industry-with-self-train-model.ipynb)
+
+In order to use these examples in your classification problems just replace datasets.
