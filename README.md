@@ -1,8 +1,8 @@
 # Text classification into industry categories
 
 The goal of this projest is to present 2 different approaches for text classification. 
-Company descriptions are classified into 1835 industry codes from official german classification WZ 2008. 
-Complete description of the task and used approaches can be found in [this article](https://medium.com/p/3bff25ce6616).
+Company descriptions are classified into 1835 industry codes from official german classification [WZ 2008](https://www.destatis.de/DE/Methoden/Klassifikationen/Gueter-Wirtschaftsklassifikationen/Downloads/klassifikation-wz-2008-3100100089004-aktuell.pdf?__blob=publicationFile). 
+Complete description of the task and used approaches can be found in [this article](https://medium.com/@michalzarnecki88/classifying-unstructured-text-into-1800-industry-categories-with-llm-and-rag-d5fe4876841f).
 
 ## Approach with LLM (Large Language Model) + RAG (Retrieval Augmented Generation)
 
