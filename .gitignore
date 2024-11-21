@@ -1,2 +1,5 @@
 .idea
 .env
+credistsafe_1000.csv
+evaluation_ROC_AUC.ipynb
+evaluation.json
